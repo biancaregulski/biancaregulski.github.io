@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 40px;
 }
 
 p {
@@ -46,16 +46,14 @@ a {
 }
 
 #home{
-	padding-top: 230px;		/* put in middle of page (depending on res) */
 	color: #45435f;
-	height: 600px;
+	height: 100vh;
 	background-color: #d6ebff;
-	border-bottom: 1px solid #c9c9c9;
 	text-align: center;
-	/* position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%); */
+}
+
+#home h1 {
+	padding-top: 35vh;
 }
 
 #projects {								/* put each project in a box, fade in separately */
@@ -66,10 +64,19 @@ a {
 	color: #fcfcfc;
 	border-bottom: 1px solid #c9c9c9;
 	text-align: left;
+	min-height: 100vh;
 }
 
-#projects a:link {
-	color: #7dabfa;
+#winter_forest_description a:link {
+	color: #b5bef7;
+}
+
+#ven_u_description a:link {
+	color: #6fc4dd;
+}
+
+#easy_as_pie_description a:link {
+	color: #f1a944;
 }
 
 #projects a:hover { 
@@ -91,6 +98,15 @@ a {
 	border-top: 1px solid #878d99;
 }
 
+.logo-grid{
+	display: grid;
+	grid-template-areas: 
+		'img link'
+		'img link'
+		'img link'
+		'img link';
+}
+
 img.example_img {
 	float:left;
 	margin-right: 15px;
@@ -110,10 +126,20 @@ img.example_img {
 	text-align: left;
 }
 
-.links {
+.contact_info {
+	margin-bottom: 20px;
+}
+
+.contact_links {
 	border-top:1px solid #2e3142; 
-	
 	padding: 20px 0;
+}
+
+img.logo_img {
+	float: left;
+	margin-right: 10px;
+	width: 30px;
+	height: 30px;
 }
 
 html {
