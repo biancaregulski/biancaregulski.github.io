@@ -8,11 +8,16 @@ h1 {
 }
 
 p {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 a {
 	text-decoration: none;
+	color: #1f3bcc;
+}
+
+a:hover {
+	color: #fcfcfc;
 }
 
 .navbar{
@@ -36,16 +41,14 @@ a {
 	transition: 0.4s;
 }
 
-/*.navbar a.active {
-	color: #0000ff;
-}*/
-
 .navbar a:hover {
 	color: #fcfcfc;
 	background-color: #bfc8d9;
 }
 
 #home{
+	padding-left: 30%;
+	padding-right: 30%;
 	color: #45435f;
 	height: 100vh;
 	background-color: #d6ebff;
@@ -56,7 +59,47 @@ a {
 	padding-top: 35vh;
 }
 
-#projects {								/* put each project in a box, fade in separately */
+.animation {
+	display:inline-block;
+	padding-bottom: 20px;
+}
+
+.animation h2 {  
+color: #757a80;
+	position:relative;
+	color: #757a80;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid #fcfcfc; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .1em; /* Adjust as needed */
+	animation: typewriter 2s steps(18) .5s 1 normal both,
+		blinkTextCursor .75s steps(18) infinite normal;
+}
+
+.bio {
+	text-align: left;
+	border-top: 1px solid #878d99;		
+	border-bottom: 1px solid #878d99;		
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: #fcfcfc;}
+  to{border-right-color: transparent;}
+}
+
+/* typewriter effect based on https://css-tricks.com/snippets/css/typewriter-effect/ */
+
+.resume_pdf {
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 20px;
+}
+
+#projects {								
 	padding-top: 50px;					/* fix extra space */
 	padding-left: 30%;
 	padding-right: 30%;
@@ -64,7 +107,6 @@ a {
 	color: #fcfcfc;
 	border-bottom: 1px solid #c9c9c9;
 	text-align: left;
-	min-height: 100vh;
 }
 
 #winter_forest_description a:link {
@@ -81,6 +123,21 @@ a {
 
 #projects a:hover { 
 	color: #FFF;
+}
+
+.project_title {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+
+ul {
+	margin-top: -5px;
+	margin-left: -15px;
+}
+
+ul li { 
+	padding: 5px 0px; 
 }
 
 .grid-container {
@@ -118,7 +175,7 @@ img.example_img {
 
 #contact {
 	padding-top: 30px;
-	height: 300px;
+	height: 330px;				/* make heigh adapt to elements */
 	padding-left: 30%;
 	padding-right: 30%;
 	background-color: #d2e7fc;
@@ -127,7 +184,12 @@ img.example_img {
 }
 
 .contact_info {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+}
+
+.contact_info > a.logo_link{
+	position: absolute;
+	margin-top: 5px;
 }
 
 .contact_links {
@@ -140,6 +202,10 @@ img.logo_img {
 	margin-right: 10px;
 	width: 30px;
 	height: 30px;
+}
+
+.logo_link {
+	line-height: 19px;
 }
 
 html {
