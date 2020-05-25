@@ -204,9 +204,6 @@ ul li {
 		'img link';
 }
 
-.project_img {
-}
-
 img.example_img {
 	float:left;
 	width: 140px;
@@ -224,6 +221,7 @@ img.example_img2 {
 	height: 163px;
 	min-height:60px;
 	min-width:60px;
+	
 }
 
 .project_title {
