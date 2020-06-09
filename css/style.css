@@ -204,15 +204,24 @@ ul li {
 		'img link';
 }
 
+img {
+	transition: width 1s, height 1s;
+}
+
 img.example_img {
 	float:left;
 	width: 140px;
 	height: 254px;
 	min-height:60px;
 	min-width:60px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.example_img:hover {
+	width: 210px;
+	height: 381px;
 }
 
 img.example_img2 {
@@ -221,7 +230,11 @@ img.example_img2 {
 	height: 163px;
 	min-height:60px;
 	min-width:60px;
-	
+}
+
+.example_img2:hover {
+	width: 250px;
+	height: 195px;
 }
 
 .project_title {
