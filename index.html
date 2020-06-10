@@ -7,7 +7,6 @@
 	<title>Bianca Regulski</title>
 </head>
 	<body>
-		<!-- make links fade when hovered -->
 		<div class="navbar">
 			<nav>
 				<span class="full-link"><a href="#home">Bianca Regulski</a></span>		<!-- for desktop display -->
@@ -18,7 +17,7 @@
 			</nav>
 		</div>
 
-		<div class="home" id="home">
+		<div id="home">
 			<h1>Bianca Regulski</h1>
 			<div class="animation">
 				<h2>Software Developer</h2>
@@ -31,15 +30,18 @@
 		<div class="projects" id="projects">
 			<h1 class="slide">Projects</h1>
 			<div class="project-container">
-				<div class="project_img w3-animate-opacity slide" id="winter_forest_img">
-					<a href="https://github.com/biancaregulski/WinterForest" target="_blank"> 
-						<img src="assets/img/winter_forest_example.png" alt="Winter Forest" class="example_img">
-					</a>
+				<div>
+					<img src="assets/img/winter_forest_example.png" alt="Winter Forest" id="winter-forest-img" class="project-img example_img">
 				</div>
 				<div class="project_description" id="winter_forest_description">
 					<div class="project_title">
-						<span class="project_link"><a href="https://github.com/biancaregulski/WinterForest" target="_blank"><h2>Winter Forest</h2></a></span>
-						<span class="project_date"><p>Dec 2019 – Feb 2020</p></span>
+						<span class="project_link">
+							<a href="https://github.com/biancaregulski/WinterForest" target="_blank">
+							<h2>Winter Forest</h2></a>
+						</span>
+						<span class="project_date">
+							<p>Dec 2019 – Feb 2020</p>
+						</span>
 					</div>
 					<ul>
 						<li>Developed Android mobile game in Java</li>
@@ -47,10 +49,8 @@
 						<li>Incorporated Shared Preferences to store status of background music and sound effects</li>
 					</ul>
 				</div>
-				<div class="project_img" id="ven_u_img">
-					<a href="https://github.com/dylnmc/Ven-U" target="_blank"> 
-						<img src="assets/img/ven_u_example.png" alt="Ven-U" class="example_img">
-					</a>
+				<div>
+					<img src="assets/img/ven_u_example.png" alt="Ven-U" id="ven-u-img" class="project-img example_img">
 				</div>
 				<div class="project_description" id="ven_u_description">
 					<div class="project_title">
@@ -64,10 +64,8 @@
 						<li>Collaborated with a small team under strict time constraints to successful completion of project</li>
 					</ul>
 				</div>
-				<div class="project_img" id="roommate_matcher_img">
-					<a href="https://github.com/biancaregulski/RoommateMatcher" target="_blank"> 
-						<img src="assets/img/roommate_matcher_example.png" alt="Roommate Matcher" class="example_img2">
-					</a>
+				<div>
+					<img src="assets/img/roommate_matcher_example.png" alt="Roommate Matcher" class="project-img example_img2">
 				</div>
 				<div class="project_description" id="roommate_matcher_description">
 					<div class="project_title">
@@ -83,9 +81,16 @@
 			</div>
 		</div>
 
+		<div id="enlarge-img-modal" class="modal hidden-xs">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="modal-img">
+			<div id="caption"></div>
+		</div>
+		
 		<div class="about" id="about">
 			<h1>About</h1>
-			<div class="bio"><img src="assets/img/profile_picture.png" alt="Profile Picture" class="profile_picture">
+			<div class="bio">
+				<img src="assets/img/profile_picture.png" alt="Profile Picture" class="profile_picture">
 				<p>Hello, my name is Bianca Regulski. I have a Bachelor's degree in Computer Science from Florida State University
 				and I enjoy using my skills to create <a href="https://github.com/biancaregulski" class="music_link" target="_blank">software</a>
 				in C, C++, C#, Java, and JavaScript. I also like to make
@@ -128,5 +133,6 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
