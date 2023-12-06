@@ -1,5 +1,10 @@
+:root {
+  --link: #4600f9;
+  --link-hover: #290090;
+  --white: #ffffff;
+}
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -26,6 +31,51 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.site-body {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  width: 30vh;
+  border-right: 1px solid lightgray;
+  padding: 3vh;
+  height: 100%;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.nav-link {
+  padding-bottom: 1.5vh;
+}
+
+.nav-link a {
+  color: var(--link)
+}
+
+.nav-link a:hover {
+  color: var(--link-hover)
+}
+
+.main-content {
+  padding: 3vh 6vh;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+.img-div img {
+  width: auto;
+  height : auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 @keyframes App-logo-spin {
