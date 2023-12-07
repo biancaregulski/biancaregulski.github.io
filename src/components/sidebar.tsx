@@ -3,9 +3,6 @@ import { useState } from "react";
 import Toggle from "react-toggle";
 import "react-toggle/style.css"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
-
 
 import girl_icon from '../girl_icon.jpeg';
 
