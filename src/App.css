@@ -35,7 +35,11 @@
 
 .site-body {
   display: flex;
+  flex-direction: column;
   height: 100%;
+  margin-left: 30%;
+  margin-right: 30%;
+  flex-wrap: wrap;
 }
 
 .sidebar {
@@ -49,12 +53,22 @@
   text-align: center;
 }
 
+.navbar-items {
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
 .nav-link {
   padding-bottom: 1.5vh;
 }
 
 .nav-link a {
-  color: var(--link)
+  color: var(--link);
+  text-decoration: none;
 }
 
 .nav-link a:hover {
@@ -62,7 +76,7 @@
 }
 
 .main-content {
-  padding: 3vh 6vh;
+  
 }
 
 .img-div {
