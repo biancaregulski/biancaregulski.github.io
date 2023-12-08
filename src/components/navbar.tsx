@@ -5,10 +5,17 @@ import "react-toggle/style.css"
 
 
 const Navbar = () => {
-  const [isLightMode, setIsLightMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const lightModeSymbol = '\u263C';
   const nightModeSymbol = '\u263E';
+
+  const toggleDarkMode = () => {
+    // let element = document.getElementById("myDIV");
+    // element.classList.toggle("mystyle");
+    document.body.classList.toggle("dark");
+    setIsDarkMode(document.body.classList.contains("dark"));
+  }
 
   return (
     <div className="navbar navbar-fixed-top py-4">
@@ -25,8 +32,8 @@ const Navbar = () => {
         </ul>
         <ul className="ml-auto navbar-nav">
             <li>
-                <button type='button' onClick={() => setIsLightMode(!isLightMode)} className="btn btn-secondary btn-md">
-                    { isLightMode ? nightModeSymbol : lightModeSymbol }
+                <button type='button' onClick={toggleDarkMode} className="btn btn-light btn-md dark-mode-button">
+                    { isDarkMode ?  lightModeSymbol : nightModeSymbol }
                 </button>
             </li>
         </ul>
