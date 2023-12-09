@@ -3,28 +3,18 @@ import { useState } from "react";
 import Toggle from "react-toggle";
 import "react-toggle/style.css"
 
-
-import girl_icon from '../girl_icon.jpeg';
-
 const Sidebar = () => {
   return (
     <>
         <div className='sidebar'>
-            <div className='img-div'>
-                <img src={girl_icon} alt="Profile photograph" />
-            </div>
-            <h2>Bianca Regulski</h2>
-            
-            {/* <i className="fa-sharp fa-light fa-sun-bright"></i> */}
-
             <div className="nav-link">
-                <Link to="/"> Home </Link>
+                <Link to="#"> Poem 1 </Link>
             </div>
             <div className="nav-link">
-                <Link to="/about"> About </Link>
+                <Link to="#"> Poem 2 </Link>
             </div>
             <div className="nav-link">
-                <Link to="/projects"> Projects </Link>
+                <Link to="#"> Poem 3 </Link>
             </div>
         </div>
     </>

@@ -1,0 +1,19 @@
+.welcome-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.full-name-header {
+    font-size: 45px;
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img-div img {
+    width: 200px;
+}

@@ -3,15 +3,24 @@
 @import "../../node_modules/bootstrap/scss/_mixins";
 
 // light theme
+:root {
+    --link: #4600f9;
+    --link-hover: #290090;
+    --nav-link: #919191;
+    --nav-link-hover: #565656;
+    --button-background: #eeeded;
+    --button-background-hover: #dddddd;
+    --button-border: #eeeded;
+}
+
 $primary: #4600f9;
-$secondary: #c4c4c4;
+$secondary: #aeaeae;
 $success: #3e8d63;
 $info: #d7caff;
 $warning: #fffc2e;
 $danger: #d62518;
-$light: #dcdcdc;
+$light: #c9c9c9;
 $dark: #5a5a5a;
-$app-background: #ffffff;
 
 
 // dark theme
@@ -47,10 +56,10 @@ $app-background: #ffffff;
     $body-color: #ffffff;
     $body-bg: #0e101f;
 
-    // --app-background: #0e101f;
     --#{$variable-prefix}body-color: #{$body-color};
     --#{$variable-prefix}body-bg: #{$body-bg};
       
+    --button-background: transparent;
+    --button-background-hover: #000000;
     --button-border: #c0c4d8;
-    
 }

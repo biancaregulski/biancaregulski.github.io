@@ -1,0 +1,9 @@
+.link-container div a {
+    margin-left: 10px;
+    color: var(--link);
+    text-decoration: none;
+}
+
+.link-container div a:hover {
+    color: var(--link-hover);
+}
