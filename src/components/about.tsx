@@ -7,6 +7,7 @@ const logoSize = 18;
 const logoColor = "gray";
 
 const About = () => {
+    const lineSymbol = '\u2b29';
     return (
         <>
             <h1>About</h1>
@@ -16,10 +17,20 @@ const About = () => {
             <p><a href="https://soundcloud.com/hazydaymusic">Here</a> is some music I've made.</p>
             <p><a href="/books">Here</a> are some of my favorite books.</p>
             <p><a href="/poetry">Here</a> is some poetry I've written.</p>
-            <hr/>
+            
+            <div className='ornamental-line'>
+                <span>
+                    {lineSymbol}
+                </span>
+            </div>
+
             <h5 className="text-secondary">Links:</h5>
             <p>If you would like to get in touch, feel free to contact me!</p>
             <div className='link-container'>
+                <div>
+                    <EmailLogo width={logoSize} height={logoSize} backgroundColor={logoColor}/>
+                    <a href="mailto:biancaregulski@yahoo.com">Email</a>
+                </div>
                 <div>
                     <GithubLogo width={logoSize} height={logoSize} backgroundColor={logoColor}/>
                     <a href="https://github.com/biancaregulski/">Github</a>
@@ -27,10 +38,6 @@ const About = () => {
                 <div>
                     <LinkedinLogo width={logoSize} height={logoSize} backgroundColor={logoColor}/>
                     <a href="https://linkedin.com/in/bianca-regulski">LinkedIn</a>
-                </div>
-                <div>
-                    <EmailLogo width={logoSize} height={logoSize} backgroundColor={logoColor}/>
-                    <a href="mailto:biancaregulski@yahoo.com">Email</a>
                 </div>
             </div>
         </>

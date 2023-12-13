@@ -1,0 +1,25 @@
+.poetry-container {
+    min-height: 200px;
+    flex-direction: column;
+}
+
+.poetry-header::after{content: ''; flex: 1}
+
+.poetry-header {
+    display: flex;
+    width: 100%;
+}
+
+.poetry-header div {
+    flex: 1;
+}
+
+.poetry-header h3 {
+    padding-top: 1em;
+    text-align: left;
+}
+
+.poetry-content {
+    padding: 2em;
+    white-space: pre-wrap;
+}

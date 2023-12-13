@@ -16,7 +16,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="navbar navbar-fixed-top py-4">
+    <div className="top-navbar py-3 w-100">
         <ul className="navbar-items">
             <li className="nav-link home-link">
                 <NavLink to="/" className={({isActive}) => isActive ? "active-link" : "" }> Home </NavLink>

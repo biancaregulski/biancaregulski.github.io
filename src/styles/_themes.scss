@@ -4,13 +4,15 @@
 
 // light theme
 :root {
-    --link: #4600f9;
+    --link: #55f;
     --link-hover: #290090;
     --nav-link: #919191;
     --nav-link-hover: #565656;
     --button-background: #eeeded;
     --button-background-hover: #dddddd;
     --button-border: #eeeded;
+    --body-background: #ffffff;
+    --gray-light: #c6c6c6;
 }
 
 $primary: #4600f9;
@@ -59,6 +61,7 @@ $dark: #5a5a5a;
     --#{$variable-prefix}body-color: #{$body-color};
     --#{$variable-prefix}body-bg: #{$body-bg};
       
+    --body-background: #0e101f;
     --button-background: transparent;
     --button-background-hover: #000000;
     --button-border: #c0c4d8;
