@@ -6,9 +6,8 @@
 :root {
     --body-background: #fefefe;
     --bright: #55f;
-    --bright-hover: #290090;
     --gray: #868686;
-    --gray-dark: #565656;
+    --gray-dark: #aa0c0c;
     --gray-light: #c6c6c6;
     --main-text: #404040;
     --button-border: #eeeded;
@@ -19,15 +18,6 @@
     --text-logo: #606060;
     --danger-text: #be2424;
 }
-
-// $primary: #55f;
-// $secondary: #aeaeae;
-// $success: #3e8d63;
-// $info: #d7caff;
-// $warning: #fffc2e;
-// $danger: #d62518;
-// $light: #c9c9c9;
-// $dark: #5a5a5a;
 
 // dark theme
 .dark {
@@ -66,7 +56,6 @@
     --#{$variable-prefix}body-bg: #{$body-bg};
       
     --bright: #8f72f9;
-    --bright-hover: #7358d7;
     --body-background: #262831;
     --gray: #bfbfbf;
     --button-background: transparent;

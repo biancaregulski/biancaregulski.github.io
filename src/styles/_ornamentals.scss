@@ -1,0 +1,25 @@
+.ornamental-line { 
+    display: flex; 
+    flex-direction: row;
+    margin: 0.5em 0;
+} 
+  
+.ornamental-line:before, 
+.ornamental-line:after { 
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 1px solid var(--gray-light); ; 
+    margin: auto; 
+} 
+
+.ornamental-line span {
+    font-size: 20px; 
+    color: var(--gray-light); 
+    padding: 0 8px;
+    margin-bottom: 5px;
+}
+
+.ornamental-border {
+    box-shadow: 0 0 0 1px var(--gray-light), 0 0 0 4px var(--body-background), 0 0 0 5px var(--gray-light), 0 0 0 11px var(--body-background);
+    height: 100%;
+}
