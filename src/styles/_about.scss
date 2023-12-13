@@ -1,9 +1,28 @@
+.about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
 .link-container div a {
     margin-left: 10px;
-    color: var(--link);
+    color: var(--bright);
     text-decoration: none;
+    vertical-align: middle;
 }
 
 .link-container div a:hover {
-    color: var(--link-hover);
+    color: var(--bright-hover);
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: auto;
+}
+
+.img-div img {
+    width: 200px;
+    border-radius: 5px;
 }

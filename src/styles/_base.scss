@@ -31,7 +31,7 @@
 .site-body {
     display: flex;
     flex-direction: row;
-    max-width: 925px;
+    max-width: 1100px;
     padding-left: 20vh;
     padding-right: 20vh;
     margin-left: auto;
@@ -41,6 +41,15 @@
 
 .main-content {
     font-family: 'Lora', serif;
+}
+
+.main-content a {
+    color: var(--bright);
+    text-decoration: none;
+}
+
+.main-content a:hover {
+    color: var(--bright-hover);
 }
 
 @keyframes App-logo-spin {
@@ -53,16 +62,7 @@ to {
 }
 
 p {
-    color: var(--text-color)
-}
-
-p a {
-    color: var(--link);
-    text-decoration: none;
-}
-
-p a:hover {
-    color: var(--link-hover);
+    color: var(--main-text)
 }
 
 .site-body h1 {
@@ -104,25 +104,64 @@ hr {
     }
 }
 
-.ornamental-line {
-    width: 100%;
-    border-bottom: 1px solid var(--gray-light); 
-    text-align: center;
-    height: 16px;
-    margin-bottom: 30px;
-}
+// .ornamental-line {
+//     width: 100%;
+//     border-bottom: 1px solid var(--gray-light); 
+//     text-align: center;
+//     height: 16px;
+//     margin-bottom: 30px;
+// }
+
+.ornamental-line { 
+    display: flex; 
+    flex-direction: row;
+    margin: 1em 0;
+} 
+  
+.ornamental-line:before, 
+.ornamental-line:after { 
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 1px solid var(--gray-light); ; 
+    margin: auto; 
+} 
 
 .ornamental-line span {
-    font-size: 22px; 
+    font-size: 20px; 
     color: var(--gray-light); 
-    background-color: white;
     padding: 0 8px;
+    margin-bottom: 5px;
 }
 
 .ornamental-border {
-    // border: 5px var(--gray-light) double;
-    box-shadow: 0 0 0 1px var(--gray-light), 0 0 0 4px #fff, 0 0 0 5px var(--gray-light), 0 0 0 11px #fff;
-    // padding: 1em;
-    // width: 100%;
+    box-shadow: 0 0 0 1px var(--gray-light), 0 0 0 4px var(--body-background), 0 0 0 5px var(--gray-light), 0 0 0 11px var(--body-background);
     height: 100%;
+}
+
+.app-container {
+
+    h1 {
+        color: var(--header-text)
+    }
+
+    h3 {
+        color: var(--header-text)
+    }
+
+    h4 {
+        color: var(--header-text)
+    }
+
+    h5 {
+        color: var(--header-text)
+    }
+
+}
+
+.danger {
+    color: var(--danger-text)
+}
+
+.page-header {
+    margin-bottom: 1em;
 }

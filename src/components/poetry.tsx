@@ -1,9 +1,11 @@
 import Sidebar from "./sidebar";
-import cornerBorder from "../assets/corner-border.png"
+import cornerBorder from "../assets/corner-border.png";
 import CornerBorder from "../assets/corner-border";
-import { poemList } from "../poems"
+import { poemList } from "../poems";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+
+const cornerBorderSize = 50;
 
 const Poetry = () => {
     const [currentPoem, setCurrentPoem] = useState(poemList[0]);        // check if available
@@ -11,12 +13,12 @@ const Poetry = () => {
 
 
     const poemLinks = poemList.map((poem) => (
-        <div className="nav-link">
+        <div className="gray">
             <Link to="#">{poem.title}</Link>
         </div>
     ));
 
-     return (
+    return (
         <div className="d-flex flex-row mt-5">
             <div className='sidebar'>
                 <h2>Poems</h2>
@@ -26,17 +28,20 @@ const Poetry = () => {
                 <div className="d-flex ml-4 ornamental-border poetry-container">
                     <div className="poetry-header">
                         <div>
-                            <CornerBorder width={50} height={50} backgroundColor={borderColor}/>
+                            <CornerBorder width={cornerBorderSize} height={cornerBorderSize} backgroundColor={borderColor} />
                         </div>
                         <h3>{currentPoem.title}</h3>
                     </div>
                     <div className="poetry-content">
                         <p>{currentPoem.text}</p>
                     </div>
+                    <div className="poetry-footer">
+                        <CornerBorder width={cornerBorderSize} height={cornerBorderSize} backgroundColor={borderColor} />
+                    </div>
                 </div>
             </div>
         </div>
-     )
-}
+    );
+};
 
 export default Poetry;

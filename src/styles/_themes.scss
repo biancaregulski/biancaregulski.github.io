@@ -4,32 +4,36 @@
 
 // light theme
 :root {
-    --link: #55f;
-    --link-hover: #290090;
-    --nav-link: #919191;
-    --nav-link-hover: #565656;
-    --button-background: #eeeded;
-    --button-background-hover: #dddddd;
-    --button-border: #eeeded;
-    --body-background: #ffffff;
+    --body-background: #fefefe;
+    --bright: #55f;
+    --bright-hover: #290090;
+    --gray: #868686;
+    --gray-dark: #565656;
     --gray-light: #c6c6c6;
+    --main-text: #404040;
+    --button-border: #eeeded;
+    --button-background: #eeeded;
+    --button-background-hover: #dfdfdf;
+    --body-background: #ffffff;
+    --header-text: #2c2c2c;
+    --text-logo: #606060;
+    --danger-text: #be2424;
 }
 
-$primary: #4600f9;
-$secondary: #aeaeae;
-$success: #3e8d63;
-$info: #d7caff;
-$warning: #fffc2e;
-$danger: #d62518;
-$light: #c9c9c9;
-$dark: #5a5a5a;
-
+// $primary: #55f;
+// $secondary: #aeaeae;
+// $success: #3e8d63;
+// $info: #d7caff;
+// $warning: #fffc2e;
+// $danger: #d62518;
+// $light: #c9c9c9;
+// $dark: #5a5a5a;
 
 // dark theme
 .dark {
 
     /* redefine theme colors for dark theme */
-    $primary: #4600f9;
+    $primary: #55f;
     $secondary: #c0c4d8;
     $success: #222222;
     $dark: #000;
@@ -56,13 +60,22 @@ $dark: #5a5a5a;
     }
 
     $body-color: #ffffff;
-    $body-bg: #0e101f;
+    $body-bg: #262831;
 
     --#{$variable-prefix}body-color: #{$body-color};
     --#{$variable-prefix}body-bg: #{$body-bg};
       
-    --body-background: #0e101f;
+    --bright: #8f72f9;
+    --bright-hover: #7358d7;
+    --body-background: #262831;
+    --gray: #bfbfbf;
     --button-background: transparent;
-    --button-background-hover: #000000;
-    --button-border: #c0c4d8;
+    --button-background-hover: #1d1e21;
+    --button-border: var(--gray);
+    --gray-dark: #565656;
+    --gray-light: #c6c6c6;
+    --main-text: #dedede;
+    --header-text: #f3f3f3;
+    --text-logo: #c6c6c6;
+    --danger-text: #ff4343;
 }
