@@ -61,10 +61,6 @@ to {
 }
 }
 
-p {
-    color: var(--main-text)
-}
-
 .site-body h1 {
     font-size: 36px;
 }
@@ -108,6 +104,10 @@ hr {
 
 .app-container {
 
+    p {
+        line-height: 30px;
+    }
+
     h1 {
         color: var(--header-text)
     }
@@ -133,3 +133,44 @@ hr {
 .page-header {
     margin-bottom: 1em;
 }
+
+
+
+/* smaller web displays */
+@media screen and (max-width: 720px) {
+    .about-container {
+        flex-direction: column;
+    }
+    #navbar-links {
+        display: none;
+    }
+    #navbar-dropdown {
+        display: block;
+    }
+}
+
+/* mobile displays */
+@media screen and (max-device-width: 720px) {
+    .about-container {
+        flex-direction: column;
+    }
+    #navbar-links {
+        display: none;
+    }
+    #navbar-dropdown {
+        display: block;
+    }
+    #sidebar {
+        display: none;
+    }
+    #footer {
+        display: flex;
+    }
+
+    #padded-content {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+  }
+
+  

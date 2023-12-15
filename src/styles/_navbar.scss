@@ -10,13 +10,19 @@
 }
 
 .navbar-items {
-    gap: 30px;
+    gap: 1em;
     display: flex;
     flex-direction: row;
     padding-left: 0;
     margin-bottom: 0;
     align-items: baseline;
     list-style: none;
+    width: 100%;
+}
+
+#navbar-links {
+    display: flex;
+    gap: 1em;
 }
 
 .navbar-link {
@@ -40,13 +46,17 @@
     color: var(--gray);
 }
 
-button.dark-mode-button {
+.navbar-button-right {
+    margin-left: auto;
+}
+
+button.mode-toggle-button {
     background-color: var(--button-background);
     color: var(--button-color);
     border-color: var(--button-border);
 }
 
-button.dark-mode-button:hover {
+button.mode-toggle-button:hover {
     background-color: var(--button-background-hover);
     color: var(--button-color);
     border-color: var(--button-border);

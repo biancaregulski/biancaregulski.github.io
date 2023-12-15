@@ -1,6 +1,6 @@
 # Overview
 
-React/TypeScript app for my personal website.
+React/TypeScript app for my personal website: biancaregulski.com
 
 ## Future Additions:
 

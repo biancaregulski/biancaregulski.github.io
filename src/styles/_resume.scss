@@ -33,10 +33,12 @@
     flex-direction: row;
     font-size: 18px;
     margin-bottom: 0.5em;
+    align-items: baseline;
 }
 
 .resume-section-summary {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 

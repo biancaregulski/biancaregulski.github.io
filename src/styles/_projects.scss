@@ -1,3 +1,29 @@
+.projects-container {
+    padding-top: 2em;
+    border-top: 1px solid var(--gray-light);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-row {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.project-row:last-child { 
+    border-bottom: none; 
+}
+
+.project-name {
+    align-items: center;
+    display: flex;
+    gap: 0.5em;
+}
+
 .project-img {
     width: 10em;
 }
