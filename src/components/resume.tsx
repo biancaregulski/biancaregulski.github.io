@@ -1,6 +1,8 @@
-import { ReactNode } from "react";
+import { MutableRefObject, ReactNode, useRef } from "react";
+import ContactContainer from "./contact-container";
 
 const Resume = () => {
+
     const buildResumeSection = (institution: string, city: string, dateRange: string, position?: string): ReactNode => {
         return (
             <div className="resume-section">
@@ -29,7 +31,7 @@ const Resume = () => {
                     Download resume as PDF
                 </a>
             </div>
-            {/* <p>Full-Stack Software Engineer with three years of professional experience in Ruby, Java, and React. Adept at analytical problem solving and creating engaging, intuitive user experiences.</p> */}
+            <p>Full-Stack Software Engineer with three years of professional experience in Ruby, Java, and React. Adept at analytical problem solving and creating engaging, intuitive user experiences.</p>
             <p className="resume-header">Experience</p>
             {buildResumeSection("Validity", "Boston, MA", "January 2021 — Present", "Software Engineer")}
             <p>
@@ -59,6 +61,7 @@ const Resume = () => {
             <p className="resume-header">Education</p>
             {buildResumeSection("Florida State University", "Tallahassee, FL", "August 2016 — May 2020")}
             <p>Bachelor's in Computer Science • Minor in Philosophy</p>
+            <ContactContainer />
         </>
     );
 };

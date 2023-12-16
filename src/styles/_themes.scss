@@ -16,13 +16,38 @@
     --button-background: #eeeded;
     --button-background-hover: #dfdfdf;
     --body-background: #ffffff;
+    --body-color: #000000;
     --header-text: #2c2c2c;
     --text-logo: #606060;
     --danger-text: #be2424;
 }
 
+[data-theme="dark"] {
+    $body-color: #ffffff;
+    $body-bg: #262831;
+
+    --#{$variable-prefix}body-color: #{$body-color};
+    --#{$variable-prefix}body-bg: #{$body-bg};
+      
+    --bright: #8f72f9;
+    --body-background: #262831;
+    --body-color: #ffffff;
+    --gray: #bfbfbf;
+    --button-background: transparent;
+    --button-background-hover: #1d1e21;
+    --button-border: var(--gray);
+    --gray-dark: #565656;
+    --gray-light: #c6c6c6;
+    --main-text: #dedede;
+    --softer-text: #c1c1c1;
+    --dropdown-hover: #5a5a5a;
+    --header-text: #f3f3f3;
+    --text-logo: #c6c6c6;
+    --danger-text: #ff4343;
+}
+
 // dark theme
-.dark {
+.dark-mode {
 
     /* redefine theme colors for dark theme */
     $primary: #55f;

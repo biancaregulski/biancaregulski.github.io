@@ -1,6 +1,5 @@
 import profilePicture from "../assets/pfp2.jpg";
 import { NavLink } from "react-router-dom";
-import { OrnamentalLine } from "./ornamental-line";
 import ContactContainer from "./contact-container";
 
 const logoSize = 18;
@@ -27,7 +26,6 @@ const About = () => {
                 </div>
 
             </div>
-            <OrnamentalLine />
             <ContactContainer />
         </div>
     );

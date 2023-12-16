@@ -1,14 +1,8 @@
-import { useContext } from "react";
-import { DarkModeContext } from "../context";
+import { useDarkMode } from "../ThemeContext";
 import { modeSymbol } from "../App";
 
 const ModeToggle = () => {
-    const { isDarkMode, setIsDarkMode } = useContext(DarkModeContext);
-
-    const toggleDarkMode = () => {
-        document.body.classList.toggle("dark");
-        setIsDarkMode(document.body.classList.contains("dark"));
-    };
+    const { isDarkMode, toggleDarkMode } = useDarkMode();
 
     return (
         <ul className="ml-auto navbar-nav">
