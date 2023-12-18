@@ -61,7 +61,6 @@ const Resume = () => {
             <p className="resume-header">Education</p>
             {buildResumeSection("Florida State University", "Tallahassee, FL", "August 2016 — May 2020")}
             <p>Bachelor's in Computer Science • Minor in Philosophy</p>
-            <ContactContainer />
         </>
     );
 };

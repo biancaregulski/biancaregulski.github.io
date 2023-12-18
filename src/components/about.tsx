@@ -12,6 +12,7 @@ const About = () => {
                 <div>
                     <p>I am a full-stack software engineer based in Boston, MA.</p>
                     <p>On this site, you can find my resume, several of my projects, and links to my web presence.</p>
+                    {/* <p><NavLink to="/web-design">Here</NavLink> I write about guiding principles of web design.</p> */}
                     <p><a href="https://soundcloud.com/hazydaymusic">Here</a> is some music I've made.</p>
                     {/* <p><a href="/books">Here</a> are some of my favorite books.</p> */}
                     <p><NavLink to="/poetry">Here</NavLink> is some poetry I've written.</p>
@@ -24,9 +25,7 @@ const About = () => {
                 <div className='img-div'>
                     <img src={profilePicture} alt="Profile photograph" />
                 </div>
-
             </div>
-            <ContactContainer />
         </div>
     );
 };

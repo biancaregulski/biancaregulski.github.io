@@ -105,13 +105,14 @@ hr {
 
 body {
     color: var(--main-text);
+    transition: background-color 0.3s ease;
 }
 
 .app-container {
+    transition: background-color 0.3s ease;
 
     p {
         line-height: 30px;
-        
     }
 
     h1 {
@@ -179,4 +180,12 @@ body {
     }
   }
 
-  
+.banner {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    gap: 1em;
+    font-family: var(--bs-body-font-family);
+    color: white;
+    margin-bottom: 1em;
+}

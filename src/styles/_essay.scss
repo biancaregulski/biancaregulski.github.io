@@ -1,0 +1,32 @@
+.essay-container {
+    
+    p {
+        text-indent: 3em;
+    }
+
+    h5 {
+        padding-top: 1em;
+    }
+}
+
+.essay-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 1em;
+
+    .essay-date {
+        margin-left: auto;
+        color: var(--gray);
+    }
+}
+
+.essay-img-container {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.footnotes {
+    font-size: 15px;
+}

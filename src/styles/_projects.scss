@@ -23,13 +23,16 @@
     display: flex;
     gap: 0.5em;
 }
-
-.project-img {
-    width: 10em;
+.project-img-container {
+    width: 100%;
 }
 
 .double-image-container {
     display: flex;
     flex-direction: row;
     gap: 0.5em;
+}
+
+.project-img {
+    width: 10em;
 }
