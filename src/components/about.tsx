@@ -15,7 +15,7 @@ const About = () => {
                     <p>I am a full-stack software engineer based in Boston, MA. I have three years of professional experience working on enterprise software in the data management and email validation sectors.</p>
                     <p>On this site, you can find my resume, several of my projects, and links to my web presence.</p>
                     {/* <p><NavLink to="/web-design">Here</NavLink> I write about guiding principles of web design.</p> */}
-                    <p>Outside of the software space, I enjoy <a href="https://soundcloud.com/hazydaymusic" target="_blank" rel="noreferrer">music</a>, <NavLink to="/poetry">poetry</NavLink>, drawing, and running. I try to fill in passing time with reading, and my genres of choice are usually philosophy, neuroscience, and history.</p>
+                    <p>Outside of the software space, I enjoy reading (philosophy and similar), <a href="https://soundcloud.com/hazydaymusic" target="_blank" rel="noreferrer">music</a>, <NavLink to="/poetry">poetry</NavLink>, and visual art. The connection between analytical problem solving and my fascination with the structure of design accords well with my interest in web development.</p>
                     {/* <p>Friends would describe me as "esoteric" and a "lateral thinker."</p> */}
                     {/* <p><a href="/books">Here</a> are some of my favorite books.</p> */}
                     {/* <p><NavLink to="/poetry">Here</NavLink> is some poetry I've written.</p> */}
