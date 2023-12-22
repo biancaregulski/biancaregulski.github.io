@@ -6,3 +6,4 @@ React/TypeScript app for my personal website: biancaregulski.com
 
 - Essay on web design principles
 - Essay on poetry
+- Implement hashrouter
