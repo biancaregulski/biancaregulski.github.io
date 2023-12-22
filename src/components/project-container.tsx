@@ -15,7 +15,7 @@ const ProjectContainer = () => {
     const winterForestDescription = (
         <>
             <div className="game-description">
-                <i>A snowflake attempts to move through a path which is obstructed by objects trees and stones. The player earns points by dragging the objects to another part of the path, making way for the snowflakes to pass, but must be sure to refrain from impeding other roaming snowflakes in the process.</i>
+                <i>A pixelated snowflake attempts to move through a path which is obstructed by objects trees and stones. The player earns points by dragging the objects to another part of the path, making way for the snowflakes to pass, without impeding other roaming snowflakes.</i>
             </div>
             <ul>
                 <li>Mobile game created with Android Canvas based around drag-and-drop and collision detection.</li>

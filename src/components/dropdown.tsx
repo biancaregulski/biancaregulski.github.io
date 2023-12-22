@@ -6,7 +6,6 @@ const Dropdown = () => {
         <div className="dropdown" id="navbar-dropdown">
             <FontAwesomeIcon className="dropdown-icon" icon={faBars} />
             <div className="dropdown-content">
-                <a href="/">About</a>
                 <a href="/resume">Resume</a>
                 <a href="/projects">Projects</a>
             </div>

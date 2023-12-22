@@ -33,6 +33,11 @@
     .row-to-column {
         flex-direction: column;
     }
+
+    .navbar-items {
+        align-items: flex-start;
+        padding-top: 0.5em;
+    }
 }
 
 /* mobile displays */
@@ -78,6 +83,7 @@
 
     .navbar-items {
         align-items: flex-start;
+        padding-top: 0.5em;
     }
 
     .row-to-column {
