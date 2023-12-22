@@ -4,15 +4,15 @@ import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import { ThemeContext } from './ThemeContext';
 import Books from './components/books';
 
-
 import Navbar from "./components/navbar";
 import About from './components/about';
 import Resume from './components/resume';
 import ProjectContainer from './components/project-container';
 import Poetry from './components/poetry';
 import Writing from './components/writing';
-import ContactContainer from './components/contact-container';
+import Contact from './components/contact';
 import WebDesignEssay from './components/essays/web-design';
+import { OrnamentalLine } from './components/ornamental-line';
 
 export const lightModeSymbol = '\u263C';
 export const darkModeSymbol = '\u263E';
@@ -52,8 +52,12 @@ function App() {
                 <Route path="/writing" element={<Writing />} />
                 <Route path="/books" element={<Books />} />
                 <Route path="/web-design" element={<WebDesignEssay />} />
+
               </Routes>
-              <ContactContainer />
+              <div className='contact-end'>
+                <OrnamentalLine />
+                <Contact />
+              </div>
             </div>
           </div>
         </div>

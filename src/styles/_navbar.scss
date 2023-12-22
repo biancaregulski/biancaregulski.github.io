@@ -46,18 +46,18 @@
     color: var(--gray);
 }
 
-.navbar-button-right {
+.navbar-right-content {
     margin-left: auto;
 }
 
-button.mode-toggle-button {
+a.mode-toggle-button, button.mode-toggle-button {
     background-color: var(--button-background);
-    color: var(--button-color);
+    color: var(--text-logo);
     border-color: var(--button-border);
 }
 
-button.mode-toggle-button:hover {
+a.mode-toggle-button:hover, button.mode-toggle-button:hover {
     background-color: var(--button-background-hover);
-    color: var(--button-color);
+    color: var(--text-logo);
     border-color: var(--button-border);
 }

@@ -6,9 +6,12 @@
 :root {
     --body-background: #fefefe;
     --bright: #55f;
+    --bubble-text: #4a4a72;
+    --bubble-background: #ececfd;
     --gray: #868686;
     --gray-dark: #767676;
     --gray-light: #c6c6c6;
+    --dropdown-background: #fafafa;
     --dropdown-hover: #eeeded;
     --main-text: #404040;
     --softer-text: #595959;
@@ -82,17 +85,20 @@
     --#{$variable-prefix}body-color: #{$body-color};
     --#{$variable-prefix}body-bg: #{$body-bg};
       
-    --bright: #8f72f9;
+    --bright: #a48bff;
     --body-background: #262831;
     --gray: #bfbfbf;
     --button-background: transparent;
     --button-background-hover: #1d1e21;
     --button-border: var(--gray);
+    --bubble-background: #39376d;
+    --bubble-text: #f5f5ff;
     --gray-dark: #565656;
     --gray-light: #c6c6c6;
     --main-text: #dedede;
     --softer-text: #c1c1c1;
-    --dropdown-hover: #5a5a5a;
+    --dropdown-background: #2f323f;
+    --dropdown-hover: #545867;
     --header-text: #f3f3f3;
     --text-logo: #c6c6c6;
     --danger-text: #ff4343;

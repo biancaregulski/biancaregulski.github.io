@@ -1,5 +1,4 @@
-import { MutableRefObject, ReactNode, useRef } from "react";
-import ContactContainer from "./contact-container";
+import { ReactNode } from "react";
 
 const Resume = () => {
 
@@ -36,8 +35,7 @@ const Resume = () => {
             {buildResumeSection("Validity", "Boston, MA", "January 2021 — Present", "Software Engineer")}
             <p>
                 <ul>
-
-                    <li>Led the development and deployment of a new, backwards-compatible version of an email verification RESTful API with robust automated unit and integration testing, improving response times and ensuring continuous uptime for tens of thousands of users.</li>
+                    <li>Led the development and deployment of a new backwards-compatible version of an email verification RESTful API with robust automated unit and integration testing, improving response times and ensuring continuous uptime for tens of thousands of users.</li>
                     <li>Implemented the front-end and back-end of an inter-account credit transfer system in Ruby on Rails, improving organizational efficiency and speed by automating work that was previously handled manually by non-technical employees.</li>
                     <li>Integrated Validity's email validation API into a widget in the Salesforce app, with automatic importation of Salesforce accounts in Validity’s internal account system, increasing Validity sales among Salesforce users.</li>
 
@@ -56,7 +54,7 @@ const Resume = () => {
 
 
             <p className="resume-header">Skills</p>
-            <p>Ruby | Rails | Python | Java | React | TypeScript | JavaScript | Android | SQL | Git</p>
+            <p>Ruby | Rails | Python | Java | SQL | React | Next.js |  HTML | CSS | JavaScript | TypeScript | Git</p>
 
             <p className="resume-header">Education</p>
             {buildResumeSection("Florida State University", "Tallahassee, FL", "August 2016 — May 2020")}

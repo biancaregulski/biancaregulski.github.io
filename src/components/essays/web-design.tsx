@@ -30,8 +30,10 @@ const WebDesignEssay = () => {
                 <a href="#navigation"><li>Navigation</li></a>
                 <a href="#visual-hierachy"><li>Visual Hierarchy</li></a>
                 <a href="#clarity"><li>Clarity</li></a>
+                <a><li>Cognitive Load</li></a>
                 <a href="#coherent-symbolism"><li>Coherent Symbolism</li></a>
-
+                <a><li>Compontentization</li></a>
+                <a><li>Standardization: forms, error states, ui comopnent libraries</li></a>
             </ol>
 
             <h5 id="navigation">Navigation</h5>
@@ -43,6 +45,20 @@ const WebDesignEssay = () => {
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+
+            <div style={{ backgroundColor: '#2e0e9d', width: "400px", height: "200px" }}>
+                <div className="w-100" style={{ backgroundColor: '#5937cf', height: "20px" }}></div>
+                <div className="d-flex justify-content-center" style={{ gap: "50px", margin: "30px" }}>
+                    <div style={{ backgroundColor: '#5937cf', width: "100px", height: "100px" }}>
+
+                    </div>
+
+                    <div style={{ backgroundColor: '#5937cf', width: "100px", height: "100px" }}>
+
+                    </div>
+
+                </div>
+            </div>
 
             <h5 id="clarity">Clarity</h5>
             <p>
@@ -71,8 +87,7 @@ const WebDesignEssay = () => {
             <p>
                 When you give symbols to indicate meaning, the user is not going to pay as much to unsymbolized content. This creates more cognitive load for the user, who is trying to assimilate expectations and results, wondering whether the message is saying what he thinks it's saying rather than proceeding with diagnosing the error itself.
             </p>
-
-            <p>Similarly, symbols should generally follow custom, especially on mobile apps when there is reduced space for text and menus frequently need to communicate exclusively with symbols. The likelihood of pressing the wrong button should be as low as realistically possible, which consistent use of symbols helps with.</p>
+            <p>Similarly, symbols should generally follow custom, especially on mobile apps when there is reduced space for text and menus frequently need to communicate exclusively with symbols. The likelihood of pressing the wrong button should be as low as realistically possible, which consistent use of symbols helps with. Design should fit currently existing design. This refers to consistency within an application and within a front-end engineering zeitgeist.</p>
             <div className="essay-img-container">
                 <img style={{ width: "50%" }} src={mobileSymbolsSrc} alt="Common symbols used in mobile apps" />
             </div>

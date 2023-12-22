@@ -18,12 +18,20 @@
         display: block;
     }
 
-    #navbar-mode-toggle {
+    #navbar-right-buttons {
         display: none;
     }
 
-    #contact-mode-toggle {
-        display: flex;
+    .contact-end {
+        display: block;
+    }
+
+    .contact-buttons {
+        justify-content: center;
+    }
+
+    .row-to-column {
+        flex-direction: column;
     }
 }
 
@@ -56,11 +64,23 @@
         padding-right: 1.5em;
     }
 
-    #navbar-mode-toggle {
+    #navbar-right-buttons {
         display: none;
     }
 
-    #contact-mode-toggle {
-        display: flex;
+    .contact-end {
+        display: block;
+    }
+
+    .contact-buttons {
+        justify-content: center;
+    }
+
+    .navbar-items {
+        align-items: flex-start;
+    }
+
+    .row-to-column {
+        flex-direction: column;
     }
   }

@@ -14,12 +14,12 @@ const Poetry = () => {
 
     const poemLinks = poemList.map((poem) => (
         <div className="gray">
-            <Link to="#">{poem.title}</Link>
+            <button className="button-as-link" onClick={() => { setCurrentPoem(poem); }}>{poem.title}</button>
         </div>
     ));
 
     return (
-        <div className="d-flex flex-row mt-5">
+        <div className="row-to-column mt-5">
             <div className='sidebar'>
                 <h2>Poems</h2>
                 {poemLinks}
