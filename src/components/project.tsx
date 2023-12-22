@@ -13,7 +13,7 @@ interface ProjectContainerProps {
     image2?: string;
 }
 
-const ProjectContainer = ({ name, description, url, skills, image1, image2 }: ProjectContainerProps) => {
+const Project = ({ name, description, url, skills, image1, image2 }: ProjectContainerProps) => {
     return (
         <div className="project-row row-to-column">
             <div className="mb-2">
@@ -53,4 +53,4 @@ const ProjectContainer = ({ name, description, url, skills, image1, image2 }: Pr
     );
 };
 
-export default ProjectContainer;
+export default Project;

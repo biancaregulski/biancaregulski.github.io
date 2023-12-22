@@ -1,8 +1,5 @@
-import Sidebar from "./sidebar";
-import cornerBorder from "../assets/corner-border.png";
 import CornerBorder from "../assets/corner-border";
 import { poemList } from "../poems";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const cornerBorderSize = 50;
@@ -14,12 +11,12 @@ const Poetry = () => {
 
     const poemLinks = poemList.map((poem) => (
         <div className="gray">
-            <button className="button-as-link" onClick={() => { setCurrentPoem(poem); }}>{poem.title}</button>
+            <button className="button-as-link sidebar-link" onClick={() => { setCurrentPoem(poem); }}>{poem.title}</button>
         </div>
     ));
 
     return (
-        <div className="row-to-column mt-5">
+        <div className="row-to-column mt-3">
             <div className='sidebar'>
                 <h2>Poems</h2>
                 {poemLinks}

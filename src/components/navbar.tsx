@@ -2,16 +2,9 @@ import { Link, NavLink } from "react-router-dom";
 import "react-toggle/style.css";
 
 import Dropdown from "./dropdown";
-import ModeToggle from "./mode-toggle";
-import EmailLogo from "../assets/email-logo";
-import GithubLogo from "../assets/github-logo";
-import LinkedinLogo from "../assets/linkedin-logo";
 import Contact from "./contact";
 
 const Navbar = () => {
-
-  const logoSize = 18;
-  const logoColor = "var(--text-logo)";
 
   return (
     <div className="top-navbar py-3 w-100">

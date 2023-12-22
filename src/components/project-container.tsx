@@ -29,7 +29,6 @@ const ProjectContainer = () => {
             <div>
                 <h4 className="page-header">Projects</h4>
                 <div className="projects-container">
-
                     <Project
                         name="Park Finder"
                         description={parkFinderDescription}
